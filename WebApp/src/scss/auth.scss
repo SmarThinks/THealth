@@ -1,0 +1,217 @@
+@import "_vars.scss";
+@import "_globals.scss";
+@import "_mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $font-text;
+  font-size: $font-deff;
+  font-weight: $font-w-def;
+  position: relative;
+  &::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $black-light;
+  }
+  .auth-panel {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    .wrapper {
+      margin: 0;
+      .title-devices-page {
+        @include breakpoint-up(medium) {
+          visibility: hidden;
+          display: none;
+        }
+        visibility: visible;
+        display: block;
+        margin-bottom: 2rem !important;
+        font-size: 3rem;
+        color: $primary;
+        font-weight: $font-w-e-bold;
+        font-family: $font-app-tile;
+        line-height: 3rem;
+      }
+      .left {
+        max-width: 30%;
+        background-color: $secondary;
+        color: $white;
+        padding: 0 1rem;
+        visibility: visible;
+        display: inherit;
+        @include breakpoint-down(medium) {
+          visibility: hidden;
+          display: none;
+        }
+        .content-left {
+          flex-direction: column;
+          .on-text-logg {
+            width: 100%;
+            .title-page {
+              font-size: 4rem;
+              line-height: 60px;
+              white-space: 5px;
+              margin-bottom: 1.25rem;
+              text-align: center;
+              font-family: $font-app-tile;
+              font-weight: 900;
+              color: $primary;
+            }
+          }
+          .logo-img-app {
+            padding: 10px;
+            overflow: hidden;
+            display: flex;
+            img {
+              width: 200px;
+              height: 200px;
+              display: inline-block;
+              margin: auto;
+              object-fit: cover;
+            }
+          }
+          .footer-logg-page {
+            cursor: pointer;
+            margin-top: 1rem;
+            .upper {
+              font-size: $font-small;
+              color: $primary-dark;
+            }
+          }
+        }
+      }
+      .right {
+        max-width: 70%;
+        @include breakpoint-down(medium) {
+          max-width: 100%;
+        }
+        .wrapper {
+          padding: 2rem 3rem;
+          flex-direction: column;
+          margin: 0 auto;
+          width: fit-content;
+          .title-page {
+            line-height: 2.5;
+            margin-bottom: 1rem;
+            font-weight: $font-w-bold;
+          }
+          .form {
+            position: relative;
+            .overlay-loading {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: $white;
+              display: flex;
+              transform: scale(0);
+              z-index: -1;
+              border-radius: 20px;
+              transition: 500ms transform ease-in-out;
+              &.show-loader {
+                transform: scale(1);
+                z-index: 100;
+              }
+
+              .spinner-border {
+                margin: auto auto;
+                color: $primary-dark;
+                width: 50px;
+                height: 50px;
+              }
+            }
+            input,
+            label {
+              width: 100%;
+              display: block;
+            }
+            label {
+              font-weight: 700;
+              font-size: $font-small;
+              margin-bottom: 10px;
+            }
+          }
+          input {
+            background-color: rgba($color: $white-dark, $alpha: 0.75);
+            border-radius: 10px !important;
+            backface-visibility: hidden;
+            transition: 200ms all ease-in-out;
+            &::placeholder {
+              letter-spacing: 1.5px;
+              font-style: italic;
+            }
+            &:active,
+            &:focus,
+            &:hover {
+              background-color: white;
+              box-shadow: 0px 0px 3px 4px
+                rgba($color: $primary-dark, $alpha: 0.55);
+            }
+
+            .error-input {
+              border-bottom-color: red;
+            }
+          }
+          .input-group {
+            &:not(:last-child) {
+              margin-bottom: 1.55rem;
+            }
+            .row-inputs-label {
+              width: 100%;
+              .forgot-link {
+                width: 60%;
+                @include breakpoint-down(medium) {
+                  width: 130%;
+                }
+                font-size: $font-small;
+                margin-bottom: 10px;
+                text-decoration: none;
+                color: $secondary-light;
+              }
+            }
+          }
+          button {
+            width: 50%;
+            background-color: $primary;
+            color: $white;
+            padding: 0.55rem 2rem;
+            border: none;
+            @include breakpoint-down(medium) {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

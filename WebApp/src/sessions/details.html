@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Details</title>
+    <link
+      rel="shortcut icon"
+      href="http://thealth.smarthinkscorp.com/herons/assets/img/heart.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/4466f858b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="loader-page absolute">
+      <div class="wrapper default">
+        <div class="loader-content flex-center">
+          <h1>Cargando</h1>
+          <div class="loader-animator">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+              <circle cx="50" cy="50" r="0" fill="none" stroke="#ffc55b" stroke-width="2">
+                <animate attributeName="r" repeatCount="indefinite" dur="1.3513513513513513s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline" begin="0s"></animate>
+                <animate attributeName="opacity" repeatCount="indefinite" dur="1.3513513513513513s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="0s"></animate>
+              </circle><circle cx="50" cy="50" r="0" fill="none" stroke="#805217" stroke-width="2">
+                <animate attributeName="r" repeatCount="indefinite" dur="1.3513513513513513s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.6756756756756757s"></animate>
+                <animate attributeName="opacity" repeatCount="indefinite" dur="1.3513513513513513s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.6756756756756757s"></animate>
+              </circle>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="content_main default flex-center">
+        <div class="presentation_session default">
+          <div class="title-row-content flex-between-center">
+            <h2 class="title-section">Paciente</h2>
+            <div class="session-actions default">
+              <div class="wrapper flex-center">
+                <button class="btn btn-success btn-dowload"><span class="btn-text">Descargar Excel</span> <span class="btn-icon"><i class="fas fa-file-download"></i></span></button>
+                <button class="btn btn-danger btn-delete"><span class="btn-text">Borrar session</span><span class="btn-icon"><i class="fas fa-trash-alt"></i></span></button>
+              </div>
+            </div>            
+          </div>          
+          <ul class="list-data data-client flex-start-center">
+            <li class="item-data flex-center">
+              <p class="data-title">Nombre</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Edad</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Fecha</p>
+              <p class="data-text data-date"></p>
+            </li>
+          </ul>
+          <ul class="list-data data-clinit-metrics flex-start-center">
+            <li class="item-data flex-center">
+              <p class="data-title">Frecuencia respiratoria</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Falla respiratoria hipercápnica</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Oxígeno suplementario</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Saturación de oxígeno</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Presión sanguinea sistólica</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Nivel de conciencia</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Temperatura</p>
+              <p class="data-text"></p>
+            </li>
+            <li class="item-data flex-center">
+              <p class="data-title">Paciente COVID</p>
+              <p class="data-text"></p>
+            </li>
+          </ul>
+        </div>
+        <div class="session-results default default flex-center-start">
+          <h2 class="title-section">Resultados</h2>
+          <div class="result-container default">
+            <div class="wrapper-result default">
+              <h3 class="title-result">Datos iniciales</h3>
+              <div class="graph-container">
+                <div class="ct-chart ct-crude-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-container default">
+            <div class="wrapper-result default">
+              <h3 class="title-result">
+                Variabilidad de la frecuencia cardíaca
+              </h3>
+              <div class="graph-container">
+                <div class="ct-chart ct-rrs-chart"></div>
+              </div>
+            </div>
+          </div>
+          <div class="result-container default">
+            <div class="wrapper-result default">
+              <h3 class="title-result">Métricas</h3>
+              <ul class="list-metrics-results flex-start-center"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

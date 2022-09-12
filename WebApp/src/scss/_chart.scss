@@ -1,0 +1,103 @@
+$ct-series-colors: (
+  #f5c505,
+  #e88d07,
+  #857555,
+  #d17905,
+  #453d3f,
+  #59922b,
+  #0544d3,
+  #000000,
+  #f05b4f,
+  #dda458,
+  #eacf7d,
+  #86797d,
+  #b2c326,
+  #6188e2,
+  #a748ca
+) !default;
+.ct-chart {
+  .ct-axis-title {
+    fill: $white;
+  }
+  .ct-label {
+    color: $white;
+    font-weight: $font-w-bold;
+    font-size: 0.55rem;
+  }
+
+  .ct-grid {
+    stroke: rgba($color: $white, $alpha: 0.07);
+  }
+  .ct-bar {
+    stroke: $secondary;
+  }
+  .ct-point {
+    stroke-width: 1px;
+  }
+  .ct-series-a {
+    .ct-line,
+    .ct-point {
+      stroke: $secondary-light;
+    }
+  }
+  .ct-series-b {
+    .ct-line,
+    .ct-point {
+      stroke: $secondary;
+    }
+  }
+  .ct-series-c {
+    .ct-line,
+    .ct-point {
+      stroke: $secondary-dark;
+    }
+  }
+  .ct-legend {
+    position: relative;
+    z-index: 10;
+    min-width: 15%;
+    li {
+      position: relative;
+      padding-left: 23px;
+      margin: 10px;
+      display: inline-block;
+      color: $white;
+      cursor: pointer;
+    }
+
+    li:before {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      content: "";
+      border: 3px solid transparent;
+      border-radius: 50%;
+    }
+
+    li.inactive:before {
+      background: transparent;
+    }
+
+    &.ct-legend-inside {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    @for $i from 0 to length($ct-series-colors) {
+      .ct-series-#{$i}:before {
+        border-color: nth($ct-series-colors, $i + 1);
+      }
+    }
+  }
+  &.ct-small-chart {
+    .ct-grid {
+      stroke: transparent;
+    }
+    .ct-label {
+      visibility: hidden;
+      display: none;
+    }
+  }
+}

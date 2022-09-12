@@ -1,0 +1,44 @@
+//Pallete Color
+$primary-light: #68c6f2;
+$primary: #2a95bf;
+$primary-dark: #00678f;
+$primary-vader: #0e3240;
+
+$secondary-light: #ffc55b;
+$secondary: #e69429;
+$secondary-dark: #af6600;
+$secondary-vader: #805217;
+
+$accent-light: #dc76a8;
+$accent: #a84779;
+$accent-dark: #76154d;
+$accent-vader: #663564;
+
+$gray: #a9aabc;
+$gray-dark: #757687;
+
+$white: #ebf2ff;
+$white-dark: #d0e2ff;
+
+$black: #000b1a;
+$black-light: #2a3340;
+
+//Fonts
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam&family=Bebas+Neue&family=Big+Shoulders+Stencil+Text&family=DM+Sans&family=Homenaje&family=Staatliches&family=Timmana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+$font-app-tile: "Orbitron", cursive;
+$font-titles: "Bebas Neue", cursive;
+$font-text: "Be Vietnam", sans-serif;
+
+$font-e-small: 12px; //
+$font-small: 16px;
+$font-deff: 24px;
+$font-bigger: 28px;
+$font-e-bigger: 32px;
+$font-ex-bigger: 44px; //40px
+
+$font-w-tiny: 300;
+$font-w-def: 400;
+$font-w-bold: 650;
+$font-w-e-bold: 850;

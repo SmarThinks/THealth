@@ -1,0 +1,114 @@
+@import "_chart.scss";
+.single-card {
+  flex: 0 0 auto;
+  margin: 5px 3px;
+  .card {
+    background-color: rgba($color: $white-dark, $alpha: 0.3);
+    border: 2px solid $secondary-dark;
+    border-radius: 20px;
+    padding: 10px 8px;
+    width: 100%;
+    .card-body {
+      padding: 15px 1rem;
+      .card-title {
+        color: $white;
+        font-weight: $font-w-bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .card-metadata {
+        padding-bottom: 5px;
+        border-bottom: 1.5px solid $secondary;
+        .card-time {
+          font-size: $font-small;
+          font-weight: 300;
+          color: $white-dark;
+          text-transform: capitalize;
+          text-align: start;
+        }
+        .metadata-session {
+          margin: 10px 0;
+          .metadata-item {
+            cursor: default;
+            &:not(:last-child) {
+              margin-right: 5px;
+            }
+            .wrapper {
+              position: relative;
+              .data-item {
+                border: 2px solid rgba($color: $secondary-dark, $alpha: 0.73);
+                background-color: $secondary;
+                border-radius: 10px;
+                color: $white;
+                font-size: $font-e-small;
+                padding: 5px 10px;
+              }
+              .data-tooltip {
+                position: absolute;
+                top: -4rem;
+                left: 50%;
+                transform: translate(-50%, -100%);
+                opacity: 0;
+                z-index: -10;
+                transition: 300ms all ease-in-out;
+                padding: 0 30px;
+                span {
+                  position: relative;
+                  display: inline-block;
+                  color: $white;
+                  font-size: $font-e-small;
+                  text-align: center;
+                  background-color: $secondary;
+                  border-radius: 20px;
+                  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+                  padding: 10px 15px;
+                  border: 1.55px solid $secondary-dark;
+
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    left: 50%;
+                    bottom: 0;
+                    transform: translate(-50%, 50%) rotate(45deg);
+                    background-color: $secondary;
+                    border: 9px solid transparent;
+                  }
+                }
+              }
+            }
+            &:hover {
+              .wrapper {
+                .data-tooltip {
+                  opacity: 1;
+                  z-index: inherit;
+                  transform: translate(-50%, 0%);
+                }
+              }
+            }
+          }
+        }
+      }
+      .card-actions {
+        width: 100%;
+        margin-top: 1rem;
+        .btn {
+          font-size: $font-e-small;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+          &.btn-details {
+            background-color: $white;
+            color: $primary;
+          }
+          &.btn-delete {
+            background-color: red;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

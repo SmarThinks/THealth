@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sing In | Hernos Plataform</title>
+    <link
+      rel="shortcut icon"
+      href="http://thealth.smarthinkscorp.com/herons/assets/heart.png"
+    />
+    <script
+      src="https://kit.fontawesome.com/4466f858b8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="auth-panel">
+      <div class="wrapper default flex-start-center">
+        <div class="left default">
+          <div class="content-left default flex-center">
+            <div class="logo-img-app">
+              <img
+                src="http://thealth.smarthinkscorp.com/herons/assets/heart.png"
+                alt="Logo Herons Plataform"
+              />
+            </div>
+            <div class="on-text-logg">
+              <h1 class="title-page">
+                Herons <br />
+                Plataform
+              </h1>
+            </div>
+            <div class="footer-logg-page">
+              <h5 class="upper">Power By: SmarThinks Corp</h5>
+            </div>
+          </div>
+        </div>
+        <div class="right default">
+          <div class="wrapper default flex-center-start">
+            <p class="title-devices-page">Herons Plataform</p>
+            <h3 class="title-page">Inicia sesión en Herons</h3>
+            <div class="form">
+              <div class="overlay-loading">
+                <div class="spinner-border" role="status"></div>
+              </div>
+              <div class="input-group">
+                <label class="form-check-label" for="input_mail_user">
+                  Correo electrónico
+                </label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="input_mail_user"
+                  aria-label="Ingresa tu correo"
+                  autofocus
+                />
+              </div>
+              <div class="input-group">
+                <div class="row-inputs-label flex-arround-center">
+                  <label class="form-check-label" for="input_pass_user">
+                    Contraseña
+                  </label>
+                  <a href="#" class="forgot-link"
+                    ><small>¿Olvidaste la contraseña?</small></a
+                  >
+                </div>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="input_pass_user"
+                  aria-label="Ingresa tu contraseña"
+                  autofocus
+                />
+              </div>
+              <button
+                class="btn btn-login"
+                id="login-btn"
+                @click="signInUser()"
+              >
+                Iniciar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Be+Vietnam&family=Bebas+Neue&family=Big+Shoulders+Stencil+Text&family=DM+Sans&family=Homenaje&family=Staatliches&family=Timmana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+p {
+  margin-bottom: 0rem !important;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-start-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-end-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-between-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-between-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-arround-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-arround-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-arround-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-evenly-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-evenly-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-center-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.flex-center-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.flex-center-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+}
+
+.flex-center-arround {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.default {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  min-width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2a3340;
+}
+
+body .auth-panel {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+}
+
+body .auth-panel .wrapper {
+  margin: 0;
+}
+
+body .auth-panel .wrapper .title-devices-page {
+  visibility: visible;
+  display: block;
+  margin-bottom: 2rem !important;
+  font-size: 3rem;
+  color: #2a95bf;
+  font-weight: 850;
+  font-family: "Orbitron", cursive;
+  line-height: 3rem;
+}
+
+@media (min-width: 47.99875em) {
+  body .auth-panel .wrapper .title-devices-page {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+body .auth-panel .wrapper .left {
+  max-width: 30%;
+  background-color: #e69429;
+  color: #ebf2ff;
+  padding: 0 1rem;
+  visibility: visible;
+  display: inherit;
+}
+
+@media (max-width: 48em) {
+  body .auth-panel .wrapper .left {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+body .auth-panel .wrapper .left .content-left {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .auth-panel .wrapper .left .content-left .on-text-logg {
+  width: 100%;
+}
+
+body .auth-panel .wrapper .left .content-left .on-text-logg .title-page {
+  font-size: 4rem;
+  line-height: 60px;
+  white-space: 5px;
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-family: "Orbitron", cursive;
+  font-weight: 900;
+  color: #2a95bf;
+}
+
+body .auth-panel .wrapper .left .content-left .logo-img-app {
+  padding: 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .auth-panel .wrapper .left .content-left .logo-img-app img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .auth-panel .wrapper .left .content-left .footer-logg-page {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+body .auth-panel .wrapper .left .content-left .footer-logg-page .upper {
+  font-size: 16px;
+  color: #00678f;
+}
+
+body .auth-panel .wrapper .right {
+  max-width: 70%;
+}
+
+@media (max-width: 48em) {
+  body .auth-panel .wrapper .right {
+    max-width: 100%;
+  }
+}
+
+body .auth-panel .wrapper .right .wrapper {
+  padding: 2rem 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .auth-panel .wrapper .right .wrapper .title-page {
+  line-height: 2.5;
+  margin-bottom: 1rem;
+  font-weight: 650;
+}
+
+body .auth-panel .wrapper .right .wrapper .form {
+  position: relative;
+}
+
+body .auth-panel .wrapper .right .wrapper .form .overlay-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ebf2ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
+  border-radius: 20px;
+  -webkit-transition: 500ms -webkit-transform ease-in-out;
+  transition: 500ms -webkit-transform ease-in-out;
+  transition: 500ms transform ease-in-out;
+  transition: 500ms transform ease-in-out, 500ms -webkit-transform ease-in-out;
+}
+
+body .auth-panel .wrapper .right .wrapper .form .overlay-loading.show-loader {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 100;
+}
+
+body .auth-panel .wrapper .right .wrapper .form .overlay-loading .spinner-border {
+  margin: auto auto;
+  color: #00678f;
+  width: 50px;
+  height: 50px;
+}
+
+body .auth-panel .wrapper .right .wrapper .form input,
+body .auth-panel .wrapper .right .wrapper .form label {
+  width: 100%;
+  display: block;
+}
+
+body .auth-panel .wrapper .right .wrapper .form label {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+body .auth-panel .wrapper .right .wrapper input {
+  background-color: rgba(208, 226, 255, 0.75);
+  border-radius: 10px !important;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 200ms all ease-in-out;
+  transition: 200ms all ease-in-out;
+}
+
+body .auth-panel .wrapper .right .wrapper input::-webkit-input-placeholder {
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+body .auth-panel .wrapper .right .wrapper input:-ms-input-placeholder {
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+body .auth-panel .wrapper .right .wrapper input::-ms-input-placeholder {
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+body .auth-panel .wrapper .right .wrapper input::placeholder {
+  letter-spacing: 1.5px;
+  font-style: italic;
+}
+
+body .auth-panel .wrapper .right .wrapper input:active, body .auth-panel .wrapper .right .wrapper input:focus, body .auth-panel .wrapper .right .wrapper input:hover {
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 3px 4px rgba(0, 103, 143, 0.55);
+          box-shadow: 0px 0px 3px 4px rgba(0, 103, 143, 0.55);
+}
+
+body .auth-panel .wrapper .right .wrapper input .error-input {
+  border-bottom-color: red;
+}
+
+body .auth-panel .wrapper .right .wrapper .input-group:not(:last-child) {
+  margin-bottom: 1.55rem;
+}
+
+body .auth-panel .wrapper .right .wrapper .input-group .row-inputs-label {
+  width: 100%;
+}
+
+body .auth-panel .wrapper .right .wrapper .input-group .row-inputs-label .forgot-link {
+  width: 60%;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #ffc55b;
+}
+
+@media (max-width: 48em) {
+  body .auth-panel .wrapper .right .wrapper .input-group .row-inputs-label .forgot-link {
+    width: 130%;
+  }
+}
+
+body .auth-panel .wrapper .right .wrapper button {
+  width: 50%;
+  background-color: #2a95bf;
+  color: #ebf2ff;
+  padding: 0.55rem 2rem;
+  border: none;
+}
+
+@media (max-width: 48em) {
+  body .auth-panel .wrapper .right .wrapper button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=auth.css.map */
