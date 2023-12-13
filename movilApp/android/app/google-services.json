@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "211986004035",
+    "project_id": "heronsapp",
+    "storage_bucket": "heronsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211986004035:android:94ef1ebfa7b23246617cf6",
+        "android_client_info": {
+          "package_name": "com.example.herons_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211986004035-cer8p18797i0o44ehrfm5ul71c1vqv8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH6eM-a3MLE_Jr0r94zaW6XYSuHW8lEsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211986004035-cer8p18797i0o44ehrfm5ul71c1vqv8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211986004035:android:a368594157071e4b617cf6",
+        "android_client_info": {
+          "package_name": "com.example.tracker_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211986004035-cer8p18797i0o44ehrfm5ul71c1vqv8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH6eM-a3MLE_Jr0r94zaW6XYSuHW8lEsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211986004035-cer8p18797i0o44ehrfm5ul71c1vqv8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
